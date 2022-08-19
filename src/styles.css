@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.child {
+  background-color: blueviolet;
+  border: 1px solid;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 100px);
+  /* grid-auto-columns: 100px; */
+}
+
+.child:nth-child(3) {
+  background-color: brown;
+  /* grid-column: 3/4; */
+}
